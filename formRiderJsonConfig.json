@@ -1,226 +1,32 @@
 {
     "notifications": [{
             "notificationCode": 1,
-            "text": "Cannot subscribe, error with some inputs",
+            "text": "notification 1",
             "textColor": "#ffffff",
             "backgroundColor": "#E56C6C"
         },
         {
             "notificationCode": 2,
-            "text": "Thank you for subscribing !",
+            "text": "notification 2",
             "textColor": "#ffffff",
             "backgroundColor": "#50CF96"
         }
     ],
     "elementsToApplyValidationOn": {
-        "wishes": {
+        "<data-frform 1>": {
             "notificationCode": {
                 "validated": 2,
                 "notValidated": 1
             },
             "resetFormUponSubmit": false,
-            "inCommonCorrespondence": [{
-                    "name": "wish",
-                    "neededPointsToValidate": 2
-                },
-                {
-                    "name": "name",
-                    "neededPointsToValidate": 1
-                }
-            ],
             "inputNameToValidate": {
-                "car": {
-                    "checkboxRequired": [{
-                            "inCommon": {
-                                "name": "wish",
-                                "pointsGiven": 2
-                            }
-                        },
-                        "at least one check bo x should be checked"
-                    ]
+                "<data-name1>": {
+                    "<validator1>": < "validator parameter" > ,
+                    "<validator2>": < "validator parameter" >
                 },
-                "home": {
-                    "checkboxRequired": [{
-                            "inCommon": {
-                                "name": "wish",
-                                "pointsGiven": 1
-                            }
-                        },
-                        "required"
-                    ]
-                },
-                "computer": {
-                    "checkboxRequired": [{
-                            "inCommon": {
-                                "name": "wish",
-                                "pointsGiven": 2
-                            }
-                        },
-                        "at least one check box should be checked"
-                    ]
-                },
-                "guitar": {
-                    "checkboxRequired": [{
-                            "inCommon": {
-                                "name": "wish",
-                                "pointsGiven": 1
-                            }
-                        },
-                        "at least one check box should be checked"
-                    ]
-                },
-                "screen": {
-                    "checkboxRequired": [{
-                            "inCommon": {
-                                "name": "wish",
-                                "pointsGiven": 2
-                            }
-                        },
-                        "at least one check box should be checked"
-                    ]
-                },
-                "printer": {
-                    "checkboxRequired": [{
-                            "inCommon": {
-                                "name": "wish",
-                                "pointsGiven": 2
-                            }
-                        },
-                        "at least one check box should be checked"
-                    ]
-                },
-                "table": {
-                    "checkboxRequired": [{
-                            "inCommon": {
-                                "name": "wish",
-                                "pointsGiven": 0
-                            }
-                        },
-                        "at least one check box should be checked"
-                    ]
-                },
-                "phone": {
-                    "checkboxRequired": [{
-                            "inCommon": {
-                                "name": "wish",
-                                "pointsGiven": 0
-                            }
-                        },
-                        "at least one check box should be checked"
-                    ]
-                },
-                "anotherWish": {
-                    "containNumber": [
-                        true,
-                        "should only contain numbers"
-                    ]
-                },
-                "sirage": {
-                    "checkboxRequired": [{
-                            "inCommon": {
-                                "name": "name",
-                                "pointsGiven": 1
-                            }
-                        },
-                        "You should chose 1 name or fill (Another name)"
-                    ]
-                },
-                "reham": {
-                    "checkboxRequired": [{
-                            "inCommon": {
-                                "name": "name",
-                                "pointsGiven": 1
-                            }
-                        },
-                        "You should chose 1 name or fill (Another name)"
-                    ]
-                },
-                "sadek": {
-                    "checkboxRequired": [{
-                            "inCommon": {
-                                "name": "name",
-                                "pointsGiven": 1
-                            }
-                        },
-                        "You should chose 1 name or fill (Another name)"
-                    ]
-                },
-                "obab": {
-                    "checkboxRequired": [{
-                            "inCommon": {
-                                "name": "name",
-                                "pointsGiven": 1
-                            }
-                        },
-                        "You should chose 1 name or fill (Another name)"
-                    ]
-                },
-                "mohamed": {
-                    "checkboxRequired": [{
-                            "inCommon": {
-                                "name": "name",
-                                "pointsGiven": 1
-                            }
-                        },
-                        "You should chose 1 name or fill (Another name)"
-                    ]
-                },
-                "ghadah": {
-                    "checkboxRequired": [{
-                            "inCommon": {
-                                "name": "name",
-                                "pointsGiven": 1
-                            }
-                        },
-                        "You should chose 1 name or fill (Another name)"
-                    ]
-                },
-                "anotherName": {
-                    "required": [{
-                            "inCommon": {
-                                "name": "name",
-                                "pointsGiven": 1
-                            }
-                        },
-                        "is required if no checkbox are checked"
-                    ],
-                    "email": [true, "another name should be an email"]
-                }
-            }
-        },
-        "signupTest": {
-            "notificationCode": {
-                "validated": 2,
-                "notValidated": 1
-            },
-            "resetFormUponSubmit": false,
-            "inCommonCorrespondence": [{
-                "name": "name",
-                "neededPointsToValidate": 2
-            }],
-            "inputNameToValidate": {
-                "userName": {
-                    "required": [{
-                            "inCommon": {
-                                "name": "name",
-                                "pointsGiven": 2
-                            }
-                        },
-                        "use name is required"
-                    ]
-                },
-                "password": {
-                    "dateFormat": [
-                        [
-                            [2, true, 4],
-                            [
-                                [1, 31],
-                                [true],
-								[2000,2021]
-                            ],
-                            ["/"]
-                        ], "Date format is not good"
-                    ]
+                "<data-name2>": {
+                    "<validator1>": < "validator parameter" > ,
+                    "<validator2>": < "validator parameter" >
                 }
             }
         }
