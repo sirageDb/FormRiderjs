@@ -1,3 +1,7 @@
 # FormRiderjs
 
-Version 1.0.0-Beta
+## Installation : 
+Follow instructions on [FormRider.js website](https://formriderjs.ilovesemicolons.io)
+
+## Docs : 
+[Visit FormRider.js website](https://formriderjs.ilovesemicolons.io)
